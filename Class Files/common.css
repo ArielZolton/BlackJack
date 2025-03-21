@@ -1,0 +1,16 @@
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: pink;
+}
+
+li {
+    display: inline;
+    margin: 30px;
+}
+ul {
+    margin: 20px 0px; /* top and bottom 20px, left and right 0px */
+}
+

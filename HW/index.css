@@ -1,0 +1,53 @@
+
+/* section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: pink;
+} */
+
+#hero {
+    width: 100%;
+    height: 30vh;
+    background-color: pink;
+    h1 {
+        color: black;
+    }
+
+}
+
+#whyUs {
+    width: 40%;
+    background-color: pink;
+    p {
+        color: black;
+    }
+}
+/* Media query for screens 800px or smaller */
+@media screen and (max-width: 800px) {
+    #whyUs {
+        width: 100%;
+    }
+    #callToAction {
+        width: 100%;
+    }
+}
+
+#callToAction {
+    width: 100%;
+    background-color: pink;
+    p {
+        color: black;
+    }
+    button {
+        background-color: red;
+        color: white;
+    }
+}
+
+
+
+
+
+
