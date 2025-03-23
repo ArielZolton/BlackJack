@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="reset.css">
+        <!-- <link rel="stylesheet" href="reset.css"> -->
         <link rel="stylesheet" href="common.css">
         <link rel="stylesheet" href="index.css">
 
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./table.html">Game Table</a></li>
-                    <li><a href="./rules.html">Rules</a></li>
-                </ul>
+        <header class="header">
+            <h1>This should be the header</h1>
+            <nav class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="./table.html">Game Table</a>
+                <a href="./rules.html">Rules</a>
             </nav>
         </header>
         <main>
             <h1>This should be the main content</h1>
-            <section>
-                <h1>Ariel Zolton</h1>
+            <section class="text" id="intro">
+                <h1>AZ</h1>
                 <h2>TechWise Scholar</h2>
             </section>
-            <section>
+            <section class="text" id="aboutMe">
                 <h1>About me</h1>
                 <p>
                     This is a paragraph about me
                 </p>
             </section>
-            <section>
+            <section class="text" id="projects">
                 <h1>My Projects</h1>
             </section>
-            <section id="hero">
+            <section class="text" id="hero">
                 <h1>Enjoy a game of Blackjack!</h1>
             </section>
-            <section id="whyUs">
+            <section class="text" id="whyUs">
                 <h1>Why we are the best blackjack app</h1>
             </section>
-            <section id="callToAction">
+            <section class="text" id="callToAction">
                 <h1>Are you ready to earn some money?</h1>
                 <button>Start Playing</button>
             </section>
+            <section class="disappearing">
+                <h1>This element disappears on a slim screen</h1>
+            </section>
+            <section class="mobileFeature">
+                <h1>You are on a mobile device</h1>
+            </section>
         </main>
-        <footer>
+        <footer class="footer">
             <h1>This should be the footer</h1>
         </footer>
     </body>

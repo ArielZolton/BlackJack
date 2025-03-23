@@ -14,3 +14,30 @@ ul {
     margin: 20px 0px; /* top and bottom 20px, left and right 0px */
 }
 
+/* Media query for screens 800px or smaller */
+@media screen and (min-width: 750px) {
+    .disappearing {
+        width: 100%;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    /* Disappearing element - visible only above 900px */
+    .disappearing {
+        display: none;
+    }
+
+    /* Mobile feature element - visible only below 900px */
+    .mobileFeature {
+        display: block;
+        width: 100%;
+        
+    }
+
+    /* Adjust layout for about page */
+    .main {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+}
