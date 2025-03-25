@@ -62,19 +62,16 @@ main {
 
 }
 
-#intro {
+#intro, #hero, #whyUs {
     width: 100%;
+    height: 100%;
     background-color: lightblue;
 }
 
-#aboutMe {
+#aboutMe, #projects, #callToAction {
     width: 100%;
+    height: 100%;
     background-color: rgb(200, 255, 200);
-}
-
-#whyUs {
-    width: 100%;
-    background-color: lightblue;
 }
 
 #whyUs p {
@@ -82,10 +79,13 @@ main {
 }
 
 /* Media query for screens 800px or smaller */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 751px) {
     .disappearing {
         width: 100%;
-        height: 100px;
+    }
+
+    .mobileFeature {
+        display: none;
     }
 }
 
@@ -100,7 +100,6 @@ main {
     .mobileFeature {
         display: block;
         width: 100%;
-        
     }
 
     /* Adjust layout for about page */
@@ -109,21 +108,32 @@ main {
     }
 }
 
-#callToAction {
-    width: 100%;
-    background-color: pink;
-    p {
-        color: black;
-    }
-    button {
-        background-color: red;
-        color: white;
-        position: relative;
-        left: 50px;
-    }
+#callToAction p {
+    color: black;
 }
 
+#callToAction button {
+    background-color: red;
+    color: white;
+    position: relative;
+    left: 50px;
+    }
 
+h1 {
+    font-family: 'Radley', serif;
+    font-size: 40px;
+    margin: 20px;
+}
 
+#copyright {
+    font-size: 10px;
+}
 
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+#chineseName {
+    font-family: 'Noto Serif SC', serif;
+}
 

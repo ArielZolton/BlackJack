@@ -1,3 +1,22 @@
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Radley', serif;
+    font-size: 40px;
+    margin: 20px;
+}
+
+#copyright {
+    font-size: 10px;
+}
+
 section {
     padding: 20px;
     margin: 20px;
