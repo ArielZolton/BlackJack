@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Login</title>
+</head>
+<body class="bg-gray-300 flex justify-center items-center min-h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-80">
+        <h2 class="text-2xl font-bold mb-4 text-center">Sign Up</h2>
+        <form id="loginForm" class="space-y-4">
+            <div>
+                <label for="name" class="block text-sm font-medium">Full name</label>
+                <input type="text" name="name" id="name" class="border rounded w-full p-1 mt-1" placeholder="Mary Potter" required />
+            </div>
+            <div>
+                <label for="age" class="block text-sm font-medium">Age</label>
+                <input type="number" name="age" id="age" class="border rounded w-full p-1 mt-1" placeholder="18" required />
+            </div>
+            <div>
+                <label for="username" class="block text-sm font-medium">Username</label>
+                <input type="text" name="username" id="username" class="border rounded w-full p-1 mt-1" placeholder="HarryPoppins" required />
+                
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium">Email</label>
+                <input type="email" id="email" class="border rounded w-full p-1 mt-1" placeholder="your@email.com">
+                <p id="emailError" class="text-red-500 text-xs mt-1 hidden">Invalid email address</p>
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium">Password</label>
+                <div class="relative">
+                    <input type="password" id="password" class="border rounded w-full p-1 mt-1" placeholder="Enter your password">
+                    <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 text-sm pr-2">show</button>
+                </div>
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium">Confirm Password</label>
+                <div class="relative">
+                    <input type="password" id="confirm-password" class="border rounded w-full p-1 mt-1" placeholder="Repeat password">
+                    <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 text-sm pr-2">show</button>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" id="legal-checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I have read the legal information.</label>
+            </div>
+            <div>
+                <input type="checkbox" id="terms-checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I have read the terms and conditions.</label>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded mt-5">Login</button>
+        </form>
+    </div>
+    <script src="login_hw.js"></script>
+</body>
+</html>
