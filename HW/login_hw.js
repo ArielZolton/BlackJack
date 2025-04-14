@@ -30,18 +30,16 @@ const togglePassword = document.querySelector('#togglePassword');
 console.log(nameInput);
 console.log(userInput);
 console.log(emailInput);
-console.log(confirmEmailInput);
 console.log(emailError);
 console.log(passwordInput);
+console.log(confirmPasswordInput);
 console.log(togglePassword);
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 emailInput.addEventListener('focusout', (e) => {
     console.log(emailInput.value);
-    if (emailInput.value === confirmEmailInput) {
-        emailError.classList.add('hidden');
-    } else if (!emailRegex.test(emailInput.value)) {
+    if (!emailRegex.test(emailInput.value)) {
         emailError.classList.remove('hidden');
     } else {
         emailError.classList.add('hidden');
