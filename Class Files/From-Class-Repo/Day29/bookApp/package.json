@@ -1,0 +1,20 @@
+{
+  "name": "Book-App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "back-end/server.js",
+  "scripts": {
+    "start": "node back-end/server.js",
+    "develop": "concurrently \"cd back-end && npm run watch\" \"cd front-end && npm run dev\"",
+    "install": "cd back-end && npm i && cd ../front-end && npm i",
+    "build": "cd front-end && npm run build",
+    "seed": "cd back-end && npm run seed",
+    "deploy-build":"npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

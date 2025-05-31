@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Playground</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <h1>Flexbox Playground</h1>
+
+  <!-- Understanding Flexbox -->
+  <section>
+    <h2>Understanding Flexbox</h2>
+    <p>Just because the grandparent has flex, doesn't mean the parent does. You must apply flex at the right level.</p>
+
+    <div class="understanding-container">
+      <!-- No flex on parent -->
+      <div class="grandparent">
+        <h3>Grandparent has Flex (No Effect)</h3>
+        <div class="parent no-flex">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+        </div>
+      </div>
+
+      <!-- Flex on both -->
+      <div class="grandparent">
+        <h3>Parent has Flex (Works!)</h3>
+        <div class="parent flex-parent">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flex Direction -->
+  <section>
+    <h2>Flex Direction</h2>
+    <h3>Row (Default)</h3>
+    <div class="container flex-row">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h3>Row Reverse</h3>
+    <div class="container flex-row-reverse">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h3>Column</h3>
+    <div class="container flex-column">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h3>Column Reverse</h3>
+    <div class="container flex-column-reverse">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </section>
+
+  <!-- Flex Wrap -->
+  <section>
+    <h2>Flex Wrap</h2>
+    <h3>Wrap</h3>
+    <div class="container flex-wrap">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+    </div>
+
+    <h3>Nowrap (Default)</h3>
+    <div class="container flex-nowrap">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+    </div>
+  </section>
+
+  <!-- Justify Content -->
+  <section>
+    <h2>Justify Content</h2>
+    <h3>Flex Start</h3>
+    <div class="container justify-start">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h3>Center</h3>
+    <div class="container justify-center">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h3>Flex End</h3>
+    <div class="container justify-end">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h3>Space Between</h3>
+    <div class="container justify-between">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h3>Space Around</h3>
+    <div class="container justify-around">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h3>Space Evenly</h3>
+    <div class="container justify-evenly">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </section>
+
+  <!-- Align Items -->
+  <section>
+    <h2>Align Items</h2>
+    <h3>Flex Start</h3>
+    <div class="container align-start">
+      <div class="item tall">1</div>
+      <div class="item">2</div>
+      <div class="item tall">3</div>
+    </div>
+
+    <h3>Center</h3>
+    <div class="container align-center">
+      <div class="item tall">1</div>
+      <div class="item">2</div>
+      <div class="item tall">3</div>
+    </div>
+
+    <h3>Flex End</h3>
+    <div class="container align-end">
+      <div class="item tall">1</div>
+      <div class="item">2</div>
+      <div class="item tall">3</div>
+    </div>
+
+    <h3>Stretch</h3>
+    <div class="container align-stretch">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+
+    <h3>Baseline</h3>
+    <div class="container align-baseline">
+      <div class="item baseline-demo">1</div>
+      <div class="item baseline-demo">2</div>
+      <div class="item baseline-demo">3</div>
+    </div>
+  </section>
+
+  <!-- Align Content -->
+  <section>
+    <h2>Align Content</h2>
+    <h3>Flex Start</h3>
+    <div class="container align-content-start">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    <h3>Center</h3>
+    <div class="container align-content-center">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    <h3>Flex End</h3>
+    <div class="container align-content-end">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    <h3>Space Around</h3>
+    <div class="container align-content-around">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    <h3>Space Between</h3>
+    <div class="container align-content-between">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    <h3>Stretch</h3>
+    <div class="container align-content-stretch">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+  </section>
+
+  <!-- Flex Grow, Shrink, and Basis -->
+  <section>
+    <h2>Flex Grow, Shrink, and Basis</h2>
+    
+    <h3>Flex Grow</h3>
+    <p>Items with higher flex-grow values will grow more to fill available space</p>
+    <div class="container flex-grow-demo">
+      <div class="item">Grow: 0</div>
+      <div class="item">Grow: 1</div>
+      <div class="item">Grow: 2</div>
+    </div>
+
+    <h3>Flex Shrink</h3>
+    <p>Items with higher flex-shrink values will shrink more when space is limited. Each item starts at 100px width.</p>
+    <div class="container flex-shrink-demo">
+      <div class="item">Shrink: 0 (Won't shrink)</div>
+      <div class="item">Shrink: 1 (Shrinks normally)</div>
+      <div class="item">Shrink: 2 (Shrinks twice as much)</div>
+    </div>
+
+    <h3>Flex Basis</h3>
+    <p>Sets the initial main size of a flex item</p>
+    <div class="container flex-basis-demo">
+      <div class="item">Basis: auto</div>
+      <div class="item">Basis: 100px</div>
+      <div class="item">Basis: 200px</div>
+    </div>
+
+    <h3>Flex Shorthand</h3>
+    <p>flex: [grow] [shrink] [basis]</p>
+    <div class="container flex-shorthand-demo">
+      <div class="item">flex: 0 1 auto</div>
+      <div class="item">flex: 1 1 auto</div>
+      <div class="item">flex: 0 0 200px</div>
+      <div class="item">flex: 1 0 100px</div>
+      <div class="item">flex: 2 1 0</div>
+    </div>
+  </section>
+</body>
+</html>

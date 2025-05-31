@@ -1,0 +1,24 @@
+:root { /*root is the default styling -- applies to the whole page*/
+    background-color: rgba(0, 0, 0, 0.373);
+}
+
+.class {  /*this is how you specify style by class*/
+    background-color: red;
+    border: 1px solid black;
+    height: 60px;
+    padding: 10px;
+    border-radius: 5px;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+
+#id { /*this is how to specify by id -- #__  */
+    background-color: rgba(255, 170, 170);
+    width: 300px;
+    height: 100px;
+    /* display: none; */
+    /* min-width: 200px; */
+    flex-shrink: 0;
+    flex-grow: 1;
+}

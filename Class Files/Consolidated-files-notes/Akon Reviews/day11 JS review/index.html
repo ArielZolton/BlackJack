@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Review</title>
+</head>
+<body>
+    <!-- ID Selector -->
+    <div id="selector-output">This is selected by ID</div>
+
+    <!-- Class Selector -->
+    <div class="output">This is selected by class</div>
+    <div class="output">This is also selected by class</div>
+
+    <!-- Tag Selector -->
+    <button>Button 1</button>
+    <button>Button 2</button>
+
+    <!-- Query Selector -->
+    <div class="output">This is selected by querySelector</div>
+
+    <!-- Query Selector All -->
+    <div class="output">This is selected by querySelectorAll</div>
+
+    <!-- Event Listener -->
+     <span id="counter">0</span>
+    <button id="event-button">Click me!</button>
+
+    <!-- Focus Event -->
+    <div class="event-section">
+        <h3>Focus Event</h3>
+        <input type="text" id="focus-input" placeholder="Click here to focus">
+        <p id="focus-output">Focus status will appear here</p>
+    </div>
+
+    <!-- Hover Event -->
+    <div class="event-section">
+        <h3>Hover Event</h3>
+        <div id="hover-element" style="width: 200px; height: 100px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+            Hover over me!
+        </div>
+        <p id="hover-output">Hover status will appear here</p>
+    </div>
+
+    <!-- Double Click Event -->
+    <div class="event-section">
+        <h3>Double Click Event</h3>
+        <div id="dblclick-element" style="width: 200px; height: 100px; background-color: #e0e0e0; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+            Double click me!
+        </div>
+        <p id="dblclick-output">Double click status will appear here</p>
+    </div>
+
+    <!-- Form Submit Event -->
+    <div class="event-section">
+        <h3>Form Submit Event</h3>
+        <form id="submit-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="form-output"></div>
+    </div>
+
+    <script src="review.js"></script>
+</body>
+</html> 

@@ -1,0 +1,120 @@
+[
+  {
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt, David Thomas",
+    "genre": "Programming",
+    "year": 1999,
+    "reviews": [
+      { "reviewer": "Alice", "rating": 5, "comment": "Essential reading!" }
+    ]
+  },
+  {
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "genre": "Programming",
+    "year": 2008,
+    "reviews": [
+      {
+        "reviewer": "Bob",
+        "rating": 4,
+        "comment": "Insightful, but challenging."
+      }
+    ]
+  },
+  {
+    "title": "Refactoring",
+    "author": "Martin Fowler",
+    "genre": "Software Engineering",
+    "year": 1999,
+    "reviews": [
+      {
+        "reviewer": "Charlie",
+        "rating": 5,
+        "comment": "Improves coding skills drastically."
+      }
+    ]
+  },
+  {
+    "title": "JavaScript: The Good Parts",
+    "author": "Douglas Crockford",
+    "genre": "Programming",
+    "year": 2008,
+    "reviews": [
+      { "reviewer": "David", "rating": 4, "comment": "Concise but powerful." }
+    ]
+  },
+  {
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "genre": "Programming",
+    "year": 2018,
+    "reviews": [
+      {
+        "reviewer": "Emily",
+        "rating": 5,
+        "comment": "Great introduction to JavaScript."
+      }
+    ]
+  },
+  {
+    "title": "Design Patterns",
+    "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+    "genre": "Software Engineering",
+    "year": 1994,
+    "reviews": [
+      {
+        "reviewer": "Frank",
+        "rating": 4,
+        "comment": "Crucial for scalable code."
+      }
+    ]
+  },
+  {
+    "title": "Code Complete",
+    "author": "Steve McConnell",
+    "genre": "Software Engineering",
+    "year": 2004,
+    "reviews": [
+      {
+        "reviewer": "Grace",
+        "rating": 5,
+        "comment": "Fundamental for all developers."
+      }
+    ]
+  },
+  {
+    "title": "Patterns of Enterprise Application Architecture",
+    "author": "Martin Fowler",
+    "genre": "Software Engineering",
+    "year": 2002,
+    "reviews": [
+      {
+        "reviewer": "Hank",
+        "rating": 4,
+        "comment": "Great for large applications."
+      }
+    ]
+  },
+  {
+    "title": "You Don't Know JS",
+    "author": "Kyle Simpson",
+    "genre": "JavaScript",
+    "year": 2015,
+    "reviews": [
+      {
+        "reviewer": "Ivy",
+        "rating": 5,
+        "comment": "Deep dive into JavaScript internals."
+      }
+    ]
+  },
+  {
+    "title": "The Mythical Man-Month",
+    "author": "Frederick P. Brooks Jr.",
+    "genre": "Software Engineering",
+    "year": 1975,
+    "reviews": [
+      { "reviewer": "Jack", "rating": 4, "comment": "Still relevant today." }
+    ]
+  }
+]

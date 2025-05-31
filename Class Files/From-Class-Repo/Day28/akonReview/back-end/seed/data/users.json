@@ -1,0 +1,78 @@
+[
+  {
+    "username": "devMaster",
+    "email": "devmaster@example.com",
+    "password": "securepass123",
+    "books": ["Clean Code", "The Pragmatic Programmer", "Code Complete"]
+  },
+  {
+    "username": "codeGuru",
+    "email": "codeguru@example.com",
+    "password": "strongpass456",
+    "books": [
+      "You Don't Know JS",
+      "Eloquent JavaScript",
+      "JavaScript: The Good Parts"
+    ]
+  },
+  {
+    "username": "jsNinja",
+    "email": "jsninja@example.com",
+    "password": "ultrasecure789",
+    "books": ["JavaScript: The Good Parts", "Refactoring", "Design Patterns"]
+  },
+  {
+    "username": "frontendQueen",
+    "email": "frontendqueen@example.com",
+    "password": "designpro321",
+    "books": ["Eloquent JavaScript", "Clean Code", "You Don't Know JS"]
+  },
+  {
+    "username": "backendBoss",
+    "email": "backendboss@example.com",
+    "password": "serverwizard456",
+    "books": [
+      "The Pragmatic Programmer",
+      "Patterns of Enterprise Application Architecture",
+      "Code Complete"
+    ]
+  },
+  {
+    "username": "fullStackKing",
+    "email": "fullstackking@example.com",
+    "password": "ultimateCoder789",
+    "books": ["Refactoring", "JavaScript: The Good Parts", "Design Patterns"]
+  },
+  {
+    "username": "dataScientist",
+    "email": "datascientist@example.com",
+    "password": "mlpower999",
+    "books": [
+      "The Mythical Man-Month",
+      "Patterns of Enterprise Application Architecture",
+      "Code Complete"
+    ]
+  },
+  {
+    "username": "cyberWarrior",
+    "email": "cyberwarrior@example.com",
+    "password": "infosec12345",
+    "books": ["The Pragmatic Programmer", "Clean Code", "Refactoring"]
+  },
+  {
+    "username": "cloudMaster",
+    "email": "cloudmaster@example.com",
+    "password": "awsazure456",
+    "books": [
+      "Patterns of Enterprise Application Architecture",
+      "You Don't Know JS",
+      "The Mythical Man-Month"
+    ]
+  },
+  {
+    "username": "aiThinker",
+    "email": "aithinker@example.com",
+    "password": "deepmindAI777",
+    "books": ["Eloquent JavaScript", "JavaScript: The Good Parts", "Clean Code"]
+  }
+]

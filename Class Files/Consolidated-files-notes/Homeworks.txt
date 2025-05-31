@@ -1,0 +1,99 @@
+Day01 HW
+  - add a link to a new about.css file with styles specific to this page (after reset and common stylesheet links)
+  - create a section with an id of `hero` that has 100% width, `height: 30vh` and
+    - an h1 with a tagline including the word `Blackjack`
+  - create a section with an id of `whyUs` that has 40% width, is floated
+    - becomes 100% when the screen is 800px or smaller
+    - includes a paragraph about why we are the best blackjack app (containg the word `Why`)
+  - create a section with an id of `callToAction` with
+    - becomes 100% when the screen is 800px or smaller
+    - includes a paragraph containing the word `Money`
+    - includes a button that says `Start Playing`
+
+Day02
+  - remove the rules section from the `about` (index.html) page
+  - Add a game `rules.html` page:
+    - entitled "Blackjack Rules"
+    - with an article
+      - called "The Rules of Blackjack" (h1)
+      - with a paragraph warning about "busting"
+  - Interlink all three pages (index, rules, table)
+
+Day02 Activity
+  this is in the table.html:
+  - A "Player's Actions" section with an
+    - h3 saying "Player's Actions"
+    - buttons (should all be `type:button` to avoid submit behavior: plug this as an open house topic!)
+      - A disabled "Hit" button
+      - A "Stand" button
+      - A "Split" button
+
+Day05
+   - sketch a wireframe for 2 minutes
+   - the header and footer needs to have a fixed position.
+   - the nav must be a flex container
+   - beyond this use flexbox or grid to create an awesome design. Have fun!
+
+   - Make a breakpoint somewhere between 500-900px. Work in common.css so it applies to both
+
+      - Make an element with a class attribute of disappearing that is only displayed above the breakpoint.
+      - Make an element with a class attribute of mobileFeature that is only displayed below the breakpoint.
+
+
+   - Remake the about page main content to use a grid, but you can choose your own wireframe design!
+
+day06/day07
+  - Add the link from google fonts
+  - Use one font for headings, but use a different font for other elements (we will check a paragraph)
+  - Adjust your font sizes and add some margins
+      - Make sure h1 is 40px with a margin of 20px
+      - #copyright needs to be 10px
+  - Make it look good!
+
+day11
+  - Create a Sign up
+  - Capture and in a separate console.log log each textField's label and value, separated by a colon and space, e.g.:
+   - Full Name: Mary Potter
+   - Username: HarryPoppins
+   - For the checkboxes, console.log the two statements that are true from the following four:
+      - "The user has checked the legal checkbox"
+      - "The user has checked the terms checkbox"
+      - "The user has not checked the legal checkbox"
+      - "The user has not checked the terms checkbox"
+   - If the following are true, console.log "The user is eligible"
+      - the passwords are both the same ( use the === strict comparison operator)
+      - the user is 13 or older(COPPA)
+      - the user has checked both checkboxes
+      - none of the other fields are blank
+      - if any of the above are not true, log that "The user is ineligible"
+  Stretch Goal:
+   - Compare the user's age and birthdate. If their age is accurately inaccurately assessed, console.log "the user is not likely to be good at math", otherwise log that ""the user can figure out the user's age"
+      - Look into the [Date Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+
+day12
+  > As a blackjack player,
+  > I want a betting interface,
+  > so that I can wager a part of my bankroll
+  - Add a bankroll to the data model (the bankroll does not represent the players total liquid assets, but rather the money they are willing to risk in the casino)
+    - Add a function (to the global scope) `getBankroll()` that gets the value of some variable defined somewhere and returns a number
+    - Add a function (to the global scope) `setBankroll(newBalance)` that assigns the value of newBalance (which should be an integer) to the variable the prior function accessed
+    - Initialize the player's bankroll to 2022, it's their luck year
+      - As a pretend online casino, we only deal in whole dollars (integers)
+  - Add a function (to the global scope) `timeToBet()` that
+    - Hides the #playersActions section, by adding some class whose rule contains the declaration `display: none`
+    - Displays the #betting section interface you will add to the html which contains:
+      - A span with display of the user's bankroll (with a `$` in front)
+      - A number material textfield `#users-wager` for the user's wager
+      - A material button that contains the text "Bet" and calls
+        - A function called `makeWager`, that console.logs the amount in the #users-wager input and calls a timeToPlay
+      - initially the #betting section should be set to `display:none`
+  - Add a function (to the global scope) `timeToPlay()` that
+    - Displays the #playersActions section by adding a class, and hides the #betting section
+
+Final Homework in separate file
+
+
+
+
+
+

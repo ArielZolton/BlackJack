@@ -1,0 +1,12 @@
+[
+    {
+        "username": "Alice Smith",
+        "email": "alice@gmail.com",
+        "balance": 1000
+    },
+    {
+        "username": "Bob Johnson",
+        "email": "bob@gmail.com",
+        "balance": 2000
+    }
+]

@@ -1,0 +1,64 @@
+/* Pseudo Classes */
+/* pseudo classes are selectors on the state of the element */
+
+a:link,
+a:visited {
+  color: rebeccapurple;
+  font-weight: bold;
+}
+
+a:link {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(0, 255, 0);
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+li:hover {
+  /* color: rgb(147, 147, 255); */
+  transform: scale(1.05);
+}
+
+a:hover {
+  color: rgb(147, 147, 255);
+  /* transform: scale(1.05); */
+}
+
+
+/* Pseudo Elements */
+/* pseudo elements are selectors of specific parts
+of the element content */
+li::marker {
+  color: rgb(255, 0, 0); /* will not change because of emoji */
+  content: "🗿";
+}
+
+/* .quote::before {
+  content: '" ';
+  color: rgb(28, 255, 69);
+  font-weight: bold;
+  font-size: large;
+}
+
+.quote::after {
+  content: ' "';
+  color: rgb(255, 28, 28);
+  font-weight: bold;
+  font-size: large;
+} */
+
+.quote::after,
+.quote::before {
+  content: '"';
+  color: rgb(28, 255, 69);
+  font-weight: bold;
+  font-size: large; /* 1.5rem */
+}

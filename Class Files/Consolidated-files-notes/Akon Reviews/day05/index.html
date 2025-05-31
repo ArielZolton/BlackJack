@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Review Session</title>
+    <link rel="stylesheet" href="./reset.css">
+
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <h1>CSS Review Session</h1>
+
+    <div class="container relative"  >
+      <p>This is a <strong>relative</strong> container.</p>
+      <div class="absolute">I am absolutely positioned.</div>
+    </div>
+    
+    <div class="container nested-relative">
+        <p>This is another <strong>relative</strong> container demonstrating multiple uses of relative positioning:</p>
+        <div class="offset">I am slightly offset using top/left.</div>
+        <div class="z-index">I have a higher z-index and appear above others.</div>
+      </div>
+
+    <div class="container">
+      <p class="block">I am a block element.</p>
+      <p class="block">Another block element below.</p>
+    </div>
+
+    <div class="container">
+      <span class="inline">I am an inline element.</span>
+      <span class="inline">Another inline element.</span>
+    </div>
+
+    <div class="container sticky-container">
+      <div class="sticky">I am a sticky element.</div>
+      <p>
+        Scroll down to see the sticky effect in action. The sticky element stays
+        at the top while scrolling.
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur</p>
+      <p>adipiscing elit. Praesent imperdiet metus</p>
+      <p>in ligula consectetur viverra.</p>
+      <p>Vivamus sit amet venenatis mauris, vel dapibus</p>
+      <p>ligula. Etiam a volutpat elit.</p>
+    </div>
+    <!-- <div class="container cascade-container">
+        <h2>Cascade & Specificity Demo</h2>
+        <p id="cascade" class="demo">
+          This paragraph’s color is determined by element, class, id, and !important rules.
+        </p>
+        <p class="tie">
+          This paragraph demonstrates tie-breaking: lower rules win when specificity is the same.
+        </p>
+      </div> -->
+
+    <div class="fixed">I am a fixed element!</div>
+  </body>
+</html>

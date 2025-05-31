@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* CSS Variables */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2196F3;
+    --text-color: #333;
+    --spacing-unit: 20px;
+    --border-radius: 8px;
+    
+}
+
+/* Specificity Section */
+.specificity-section .demo-box {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: var(--border-radius);
+}
+
+
+.specificity-section .specificity {
+    font-family: monospace;
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+
+/* Example 1: Element vs Class */
+
+/* p { color: black; }
+.text { color: red; }
+.text {color:green} */
+
+/* Example 2: Multiple Classes vs ID */
+#unique { color: green; }
+.text.special { color: blue; }
+
+
+/* Example 3: Inline Style vs ID */
+
+/* #inline-demo { color: orange; } */
+
+
+/* Example 4: Complex Selector */
+
+/* .parent .text.special { color: purple; }
+.text.special { color: red; } */
+
+/* Example 5: Universal vs Specific */
+
+/* .text { color: red; }
+* { color: gray; } */
+
+.thisclass{
+    background-color: red;
+}
+
+.thatclass{
+    background-color: blue;
+}
+
+
+#overriddenId{
+    color: blue;
+}
+
+/* Variables Section */
+.variables-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.var-box {
+    padding: var(--spacing-unit);
+    border-radius: var(--border-radius);
+    color: white;
+}
+
+.var-box.primary {
+    background-color: var(--primary-color);
+}
+
+.var-box.secondary {
+    background-color: var(--secondary-color);
+}
+
+.var-box.fallback {
+    background-color: var(--primary-color, #FF9800);
+}
+
+.var-box.calc {
+    background-color: var(--primary-color);
+    width: calc(var(--spacing-unit) * 15);
+}
+
+/* Pseudo Classes Section */
+.interactive-demo {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.hover-btn {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hover-btn:hover {
+    transform: scale(1.1);
+}
+
+.focus-input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: var(--border-radius);
+    outline: none;
+}
+
+.focus-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 50px rgba(76, 175, 80, 0.3);
+}
+
+/* nth-child Examples */
+.nth-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nth-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f5f5f5;
+    border-radius: var(--border-radius);
+}
+
+.nth-list li:nth-child(1) {
+    background-color: #093f66;
+}
+
+.nth-list li:nth-child(3n) {
+    background-color: #c8e6c9;
+}
+
+/* first-child and last-child */
+.child-list {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.child-list span:first-child {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.child-list span:last-child {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Pseudo Elements */
+.quote {
+    position: relative;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: var(--border-radius);
+}
+
+.quote::before {
+    content: '"';
+    font-size: 48px;
+    color: var(--primary-color);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.quote::after {
+    content: '"';
+    font-size: 48px;
+    color: var(--primary-color);
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.highlight {
+    position: relative;
+    padding: 10px;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(76, 175, 80, 0.2);
+    z-index: -1;
+}
+
+/* first-letter and first-line */
+.first-letter::first-letter {
+    font-size: 48px;
+    color: var(--primary-color);
+    float: left;
+    line-height: 1;
+    padding-right: 8px;
+}
+
+.first-line::first-line {
+    color: var(--secondary-color);
+    font-weight: bold;
+} 

@@ -1,0 +1,5 @@
+node_modules
+.env
+
+# ignore .git if this folder is a git repo
+.git

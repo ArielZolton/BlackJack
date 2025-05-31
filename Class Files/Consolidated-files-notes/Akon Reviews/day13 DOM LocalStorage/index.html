@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Review</title>
+   
+    <style>
+        .hidden {
+            display: none;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        .card {
+            padding: 10px;
+            border-radius: 5px;
+            width: 250px;
+            text-align: center;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+        .highlight {
+            background-color: yellow;
+            padding: 5px;
+            border-radius: 4px;
+        }
+    </style>
+   
+</head>
+<body>
+    <h1>DOM Manipulation Review</h1>
+    <section id="createElementSection">
+        <h2>Creating Elements</h2>
+        <button id="createElement">Create Element</button>
+        <div id="createElementContainer"></div>
+    </section>
+    <section id="appendElementSection">
+        <h2>Appending Elements</h2>
+        <button id="appendChildElement">Append Child</button>
+        <button id="appendElement">Append</button>
+        <div id="appendElementContainer"></div>
+    </section>
+    <section id="classListSection">
+        <h2>ClassList Methods</h2>
+        <button id="toggleClassList">Toggle Class</button>
+        <div id="classListContainer" class="box ">ClassList Example</div>
+    </section>
+    <section id="textContentSection">
+        <h2>Text Content vs. HTML Content</h2>
+        <div id="visibleExample" style="visibility: hidden;">This is hidden text with visibility.</div>
+        <div id="textContentContainer"></div>
+    </section>
+    <section id="localStorageSection">
+        <h2>LocalStorage Example</h2>
+        <form id="localStorageForm">
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput" name="name">
+    
+            <label for="ageInput">Age:</label>
+            <input type="number" id="ageInput" name="age">
+    
+            <button type="button" id="saveToLocalStorage">Save to LocalStorage</button>
+        </form>
+        <button id="clearLocalStorage">Clear All LocalStorage</button>
+        <div id="localStorageDisplay"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html> 

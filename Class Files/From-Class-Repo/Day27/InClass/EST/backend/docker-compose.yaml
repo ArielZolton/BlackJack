@@ -1,0 +1,22 @@
+services:
+  db:
+    image: mongo
+    container_name: mongo-db
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo_data:/data/db
+  api:
+    # image: techwise/express-api
+    build: .
+    container_name: express-api
+    ports:
+      - 3000:3000
+    environment:
+      - MONGO_URI=mongodb://db:27017/est
+    depends_on:
+      - db
+    volumes:
+      - ./:/app
+volumes:
+  mongo_data:

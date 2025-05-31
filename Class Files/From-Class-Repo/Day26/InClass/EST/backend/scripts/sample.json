@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "username": "john_doe",
+      "email": "john.doe@example.com",
+      "password": "securePass123",
+      "balance": 10000.50,
+      "assets": [
+        {
+          "symbol": "AAPL",
+          "shares": 10,
+          "type": "stock"
+        },
+        {
+          "symbol": "BTC",
+          "shares": 2,
+          "type": "crypto"
+        },
+        {
+          "symbol": "MSFT",
+          "shares": 8,
+          "type": "stock"
+        }
+      ]
+    },
+    {
+      "username": "jane_smith",
+      "email": "jane.smith@example.com",
+      "password": "securePass456",
+      "balance": 25000.75,
+      "assets": [
+        {
+          "symbol": "GOOGL",
+          "shares": 5,
+          "type": "stock"
+        },
+        {
+          "symbol": "ETH",
+          "shares": 15,
+          "type": "crypto"
+        },
+        {
+          "symbol": "TSLA",
+          "shares": 3,
+          "type": "stock"
+        },
+        {
+          "symbol": "US10Y",
+          "shares": 100,
+          "type": "bond"
+        }
+      ]
+    },
+    {
+      "username": "bob_wilson",
+      "email": "bob.wilson@example.com",
+      "password": "securePass789",
+      "balance": 5000.25,
+      "assets": [
+        {
+          "symbol": "TSLA230630C300",
+          "shares": 5,
+          "type": "option"
+        }
+      ]
+    }
+  ]
+}

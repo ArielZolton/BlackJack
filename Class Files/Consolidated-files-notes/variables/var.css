@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --primary-color: #8bb5e2;
+    --secondary-color: #226d9f;
+    --accent-color: #59e73c;
+    --background-color: #1e1d28;
+    --text-color: #dddddd;
+    --border-radius: 5px;
+    --card-background-color: #312f44;
+}
+
+main {
+    padding: 20px;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.card {
+    /* margin: 10px; */
+    margin-top: 16px;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    background-color: var(--card-background-color);
+    /* border: 1px solid var(--primary-color); */
+}
+
+.card:hover {
+    /* background-color: var(--primary-color); */
+    /* cursor: pointer; */
+    transform: scale(1.02);
+    box-shadow: 0 0 10px 0 rgba(53, 217, 235, 0.5);
+    transition: transform 0.3s ease-in-out,
+                box-shadow 0.3s ease-in-out;
+}
+
+/* not gonna load the style because the 
+first child of the card parent is not a p tag */
+.card p:first-child {
+    background-color: red;
+}
+/* .card:first-child {
+    color: var(--accent-color);
+} */
+
+.card p:last-child {
+    /* background-color: blue; */
+    color: var(--accent-color)
+}
+
+.card p:nth-child(2) {
+    background-color: green;
+    color: var(--accent-color);
+}
+/* .card h2:nth-child(1){
+    color: red !important;
+    background-color: red !important;
+} */
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* color: #2c3e50; */
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    /* color: #333; */
+    color: var(--text-color);
+}

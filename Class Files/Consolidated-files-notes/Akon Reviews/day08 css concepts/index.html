@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Concepts Lesson</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>CSS Concepts Lesson</h1>
+    <a href="#" style="" class="text-sm/6 font-semibold text-gray-900 thisclass thatclass"
+    id="overriddenId"
+    >Product</a>
+
+    <!-- CSS Specificity Section -->
+    <section class="specificity-section">
+        <h2>CSS Specificity</h2>
+        <p>Which style will be applied? Let's analyze each example!</p>
+
+        
+        <!-- Example 1:-->
+        <!-- <div class="demo-box">
+            <h3>Example 1: Element vs Class</h3>
+            <p class="text" >This text has both an element selector (p) and a class selector (.text)</p>
+        </div> -->
+
+        <!-- Example 2: -->
+        <!-- <div class="demo-box">
+            <h3>Example 2: Multiple Classes vs ID</h3>
+            <p class="text special" id="unique">This text has two classes (.text.special) and one ID (#unique)</p>
+        </div> -->
+
+        <!-- Example 3: -->
+        <!-- <div class="demo-box">
+            <h3>Example 3: Inline Style vs ID</h3>
+            <p class="text" id="inline-demo" style="color: purple;">This text has an inline style and an ID</p>
+        </div> -->
+
+        <!-- Example 4:  -->
+        <!-- <div class="demo-box">
+            <h3>Example 4: Complex Selector</h3>
+            <div class="parent">
+                <p class="text special">This text has a parent div with class and two classes on the element</p>
+            </div>
+        </div> -->
+
+        <!-- Example 5: -->
+        <!-- <div class="demo-box">
+            <h3>Example 5: Universal vs Specific</h3>
+            <p class="text">This text has a universal selector (*) and a class</p>
+        </div> -->
+    </section>
+
+    <!-- CSS Variables Section -->
+    <section class="variables-section">
+        <h2>CSS Variables (Custom Properties)</h2>
+        
+        <div class="variables-demo">
+            <h3>Basic Variable Usage</h3>
+            <div class="var-box primary">Primary Color Box</div>
+            <div class="var-box secondary">Secondary Color Box</div>
+            
+            <h3>Variable with Fallback</h3>
+            <div class="var-box fallback">This box uses a fallback value</div>
+            
+            <h3>Variable in Calculations</h3>
+            <div class="var-box calc">This box uses a calculated value</div>
+        </div>
+    </section>
+
+    <!-- Pseudo Classes and Elements Section -->
+    <section class="pseudo-section">
+        <h2>Pseudo Classes and Elements</h2>
+
+        <div class="pseudo-demo">
+            <h3>Pseudo Classes</h3>
+            
+            <!-- Hover and Focus -->
+            <div class="interactive-demo">
+                <button class="hover-btn">Hover over me!</button>
+                <input type="text" class="focus-input" placeholder="Click me to focus">
+            </div>
+
+            <!-- nth-child -->
+            <div class="nth-child-demo">
+                <h4>nth-child Examples</h4>
+                <ul class="nth-list">
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                    <li>Fourth item</li>
+                    <li>Fifth item</li>
+                    
+                    
+                </ul>
+            </div>
+
+            <!-- first-child and last-child -->
+            <div class="first-last-demo">
+                <h4>First and Last Child</h4>
+                <div class="child-list">
+                    <span>First</span>
+                    <span>Middle</span>
+                    <span>Last</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pseudo-elements">
+            <h3>Pseudo Elements</h3>
+            
+            <!-- ::before and ::after -->
+            <div class="before-after-demo">
+                <p class="quote">This is a quote</p>
+                <p class="highlight">This text has a highlight</p>
+            </div>
+
+            <!-- ::first-letter and ::first-line -->
+            <div class="text-effects">
+                <p class="first-letter">This paragraph has a special first letter.</p>
+                <p class="first-line">This paragraph has a special first line. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
