@@ -2,7 +2,7 @@
 //     //...
 // }
 
-module.exports = {
+module.exports = {              //
     apiAuth: function(req, res, next) {
         // x-api-key
         const apiKey = req.headers['x-api-key'];
