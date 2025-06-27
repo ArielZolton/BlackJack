@@ -1,0 +1,141 @@
+.hidden{
+    display: none;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+    height: 20px;
+    width: 100%;
+    /* border: 1px solid black; */
+    /* gap: 15px; */
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0px;
+    background-color: rgb(203, 203, 203);
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+    /* z-index: 10; */
+    padding: 10px;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(203, 203, 203);
+    height: 50px;
+    width: 100%;
+    border: 1px solid black;
+    /* z-index: 10; */
+}
+
+#hero {
+    width: 100%;
+    height: 30vh;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: black;
+    }
+
+}
+
+main {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+
+}
+
+#intro, #hero, #whyUs {
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+}
+
+#aboutMe, #projects, #callToAction {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(200, 255, 200);
+}
+
+#whyUs p {
+    color: black;
+}
+
+/* Media query for screens 800px or smaller */
+@media screen and (min-width: 751px) {
+    .disappearing {
+        width: 100%;
+    }
+
+    .mobileFeature {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    /* Disappearing element - visible only above 900px */
+    .disappearing {
+        display: none;
+    }
+
+    /* Mobile feature element - visible only below 900px */
+    .mobileFeature {
+        display: block;
+        width: 100%;
+    }
+
+    /* Adjust layout for about page */
+    .main {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+}
+
+#callToAction p {
+    color: black;
+}
+
+#callToAction button {
+    background-color: red;
+    color: white;
+    position: relative;
+    left: 50px;
+    }
+
+h1 {
+    font-family: 'Radley', serif;
+    font-size: 40px;
+    margin: 20px;
+}
+
+#copyright {
+    font-size: 10px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+#chineseName {
+    font-family: 'Noto Serif SC', serif;
+}
+

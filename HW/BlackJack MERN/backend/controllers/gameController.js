@@ -33,12 +33,12 @@ function handValue(cards) {
 
 const startGame = async (req, res) => {
   const deck = createDeck();
-  const playerCards = [dealCard(deck), dealCard(deck)];
-  const dealerCards = [dealCard(deck), dealCard(deck)];
+  const playerHand = [dealCard(deck), dealCard(deck)];
+  const dealerHand = [dealCard(deck), dealCard(deck)];
   const game = await Game.create({ 
     player: req.body.playerName, 
-    playerCards, 
-    dealerCards,
+    playerHand, 
+    dealerHand,
     deck,
     status: 'playing',
   });
@@ -51,7 +51,7 @@ const hitCard = async (req, res) => {
 
   const deck = game.deck;
   const newCard = dealCard(deck);
-  game.playerCards.push(newCard);
+  game.playerHand.push(newCard);
   game.deck = deck;
   await game.save();
   res.json(game);
@@ -59,19 +59,32 @@ const hitCard = async (req, res) => {
 
 const standGame = async (req, res) => {
   const game = await Game.findById(req.params.id);
-  if (!game || game.status !== 'playing') return res.status(400).json({ error: 'Invalid game' });
-
-  const deck = game.deck;
-  while (handValue(game.dealerCards) < 17) {
-    game.dealerCards.push(dealCard(deck));
+  if (!game) {
+    return res.status(404).json({ error: 'Game not found' });
+  }
+  if (game.status !== 'playing') {
+    return res.status(200).json(game);   // return the game state again instead of erroring
   }
 
-  const playerTotal = handValue(game.playerCards);
-  const dealerTotal = handValue(game.dealerCards);
+  const deck = game.deck;
+  while (handValue(game.dealerHand) < 17) {
+    game.dealerHand.push(dealCard(deck));
+  }
 
-  if (playerTotal > 21) game.status = 'lost';
-  else if (dealerTotal > 21 || playerTotal > dealerTotal) game.status = 'won';
-  else game.status = 'lost';
+  const playerTotal = handValue(game.playerHand);
+  const dealerTotal = handValue(game.dealerHand);
+
+  if (playerTotal > 21 && dealerTotal > 21) {
+    game.status = 'lost';  // or 'draw' if you want to allow that case
+  } else if (playerTotal > 21) {
+    game.status = 'lost';
+  } else if (dealerTotal > 21) {
+    game.status = 'won';
+  } else if (playerTotal > dealerTotal) {
+    game.status = 'won';
+  } else {
+    game.status = 'lost';  // ties go to dealer
+  }
 
   game.deck = deck;
   await game.save();

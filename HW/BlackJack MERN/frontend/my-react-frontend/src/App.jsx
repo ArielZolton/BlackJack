@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import GameBoard from './components/gameBoard';
-import StartGame from './components/startGame';
-import GameHistory from './components/gameHistory';
+// import GameBoard from './components/GameBoard';
+// import StartGame from './components/StartGame';
+// import GameHistory from './components/GameHistory';
 import { Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import GameTable from './components/GameTable';
